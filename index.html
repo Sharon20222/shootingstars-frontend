@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>ShootingStars</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -9,21 +8,15 @@
 
 <body>
 
-<h1>✨ ShootingStars Quant Dashboard</h1>
+<h1>ShootingStars Quant Dashboard</h1>
 
-<div class="panel">
-  <input id="ticker" placeholder="Enter ticker (AAPL)">
-  <button onclick="load()">Analyze</button>
-</div>
+<input id="ticker" placeholder="Enter ticker (AAPL)">
+<button onclick="run()">Analyze</button>
 
-<div class="grid">
-  <canvas id="chart"></canvas>
-</div>
+<canvas id="chart"></canvas>
 
-<div class="grid">
-  <div id="signals"></div>
-  <div id="candles"></div>
-</div>
+<div id="signals"></div>
+<div id="candles"></div>
 
 <script src="app.js"></script>
 </body>
